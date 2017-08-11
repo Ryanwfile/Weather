@@ -1,0 +1,325 @@
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+
+.navbar-default/*governs the background and border*/
+{
+  background:none;
+  border:none;
+}
+
+.navbar .navbar-nav 
+{
+  display: inline-block;
+  float: none;
+  vertical-align: top;  
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  background-color:transparent;
+}
+
+#moonImg
+{
+  width:5.5vw;
+  height:5.5vw;
+  border-radius:50%;
+  margin:15px;
+}
+
+body 
+{
+   background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.wrap 
+{
+  text-align:center;
+  margin:auto;  
+  margin-top:5%;
+  margin-bottom:5%; 
+}
+
+hr
+{
+  border:1px black solid;
+  width:99%;
+}
+
+#wl/**/
+{
+  font-size:250%;
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;  
+}
+
+h5
+{
+  text-align:center;  
+  font-family:Georgia;
+  font-size:125%;
+  width:100%;
+  color:black;
+  position:relative;
+  top:15px;
+}
+
+#day >img
+{
+  width:5.5vw;
+  height:5.5vw;
+}
+
+#spec
+{
+  font-size:16px;
+  background:white;
+  text-align:center;
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+  text-shadow:1px 2px 3px;
+  font-family:"Courier New";   
+  padding:5px;
+}
+
+#main /*main div inside wrapper*/
+{
+  width:95%;
+  box-shadow:  0 0 0 1px #27496d,0 5px 15px #193047;
+  color:black;
+  margin:auto; 
+  background:white;  
+}
+
+#pbr
+{ 
+  font-family:Georgia; 
+  font-size:125%; 
+  
+}
+
+#day
+{   
+  font-family:Georgia;
+  font-size:175%;
+ 
+}
+
+#forecast /*panel body id*/
+{  
+  text-align:center;
+  color:black;
+  font-family:Georgia;  
+  //top:25px;  
+  font-size:175%;
+  font-family:Georgia; 
+}
+
+#tglBtn
+{
+  color:black;
+  font-size:16px;
+  text-align:center;  
+  font-family:Tahoma, Geneva, sans-serif;
+  width: 5vw;
+	height:5vw;  
+  border-radius: 50%;
+  background:lightblue;  
+  justify-content:center;
+  border:2px black solid;  
+}
+
+#titleBrk
+{
+  width:75%;
+  border:1px solid black;
+}
+
+#two/*The paragraph containing Toggle Metric/Imperial*/
+{
+  font-size:135%;
+  font-family:Times;
+}
+
+#fc
+{
+  //font-size:155%;
+  font-family:Georgia;
+  background-color:white;
+  border-bottom:1px solid black;
+}
+
+#set/*row of the 3 day forecast*/
+{  
+  display:flex;
+  margin:auto;
+  width:100%;
+  //height:300px;
+  text-align:center;
+  justify-content:center;
+  //overflow:hidden;/*this seems like a decent solution*/
+  
+}
+
+#day3/*Forecast heading*/
+{
+  margin:auto;
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align:center;
+  font-size:250%;
+  width:100%;
+  position:relative;
+  top:-10px;
+}
+.se/*the 7 parts of the 3day forecast*/
+{
+  width:15%;
+  height:320px;
+  font-size:16px;
+  font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+  border-right:1px solid black;
+  position:relative;
+  margin:auto;
+  padding:1px;
+}
+
+.se:last-child/*last part of the 3 day forecast*/
+{
+  border-right:none;
+}
+
+#footer
+{
+  width:100%;
+  margin:auto;
+  margin-top:25px;
+  }
+
+#one
+{
+  font-size:155%;
+  font-family:Georgia;
+  background:white;
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+  padding:1px;
+  text-wrap:wrap;
+  margin-bottom:10px;
+  margin-right:5px;
+  width:49%;
+}
+
+#foot2
+{
+  width:49%;
+  margin:auto;
+  text-align:center;
+  position:relative;
+  left:30px;
+}
+
+#wuIcon
+{
+  width:70%;
+  height:65%;
+  padding:1px;
+}
+
+
+
+@media screen and (max-width:991px)
+{
+  #day,#forecast
+  {
+    font-size:125%;
+  }
+  
+  #set
+    {
+      display:flex;
+      flex-wrap:wrap;
+      //margin-bottom:50px;
+      //height:70vw;
+    }
+  .se/*the 7 parts of the 3day forecast*/
+    {
+      width:25%;
+      //margin-bottom:50px; 
+      font-size:16px;
+      font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+      border:2px double black;
+      border-radius:5%;
+      position:relative;
+      margin:auto;
+      margin:5px;
+      padding:1px;
+      text-align:center;      
+    }
+  .se:last-child
+  {
+    border:2px double black;
+  }
+  
+}
+
+@media screen and (max-width:750px)
+{
+  
+  #day,#forecast
+  {
+    font-size:105%;
+  }
+    .se
+    {
+      
+      //margin-bottom:50px;
+      text-align:center;
+    }  
+  
+    //.se > img
+    {
+      width:5vw;
+      height:5vw;
+    }
+  #tglBtn
+  {
+    font-size:14px;
+    text-align:center;
+    width:8vw;
+    height:8vw;
+  }
+  
+}
+
+@media screen and (max-width:550px)
+{
+    .se
+    {      
+      width:33%;
+      text-align:center;
+    }
+    
+    .se:nth-child(4)
+    {
+      border-right:2px solid black;
+    }
+    
+    
+  
+}
+
+@media screen and (max-width:450px)
+{
+  #spec
+  {
+    font-size:14px;
+  }
+}
